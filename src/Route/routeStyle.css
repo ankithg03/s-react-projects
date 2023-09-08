@@ -1,0 +1,18 @@
+.logo {
+    border-radius: 9px;
+    box-shadow: 0 0 9px 0px #00000052;
+}
+
+.header-bg{
+    background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
+}
+
+.card-btn{
+    background: #e8b53d;
+    transition: .5s linear background;
+}
+
+.card-btn:hover{
+    background: #009afa;
+    transition: .5s linear background;
+}
