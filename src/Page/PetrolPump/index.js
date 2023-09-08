@@ -1,2 +1,1 @@
-export {default} from './PetrolPumpComponent'
-
+export {default} from './Components/PetrolPumpComponent'

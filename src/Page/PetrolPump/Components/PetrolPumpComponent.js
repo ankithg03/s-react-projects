@@ -1,4 +1,5 @@
 import React from "react";
+import GraphComponent from "./GraphComponent"
 
 const PetrolPumpComponent = () => {
     const data = [{ name: 'A', fuel: 20, dist: 20 },
@@ -29,24 +30,31 @@ const PetrolPumpComponent = () => {
                 } else {
 
                 }
-                
+
                 return true
             })
-            if(solution.length === data.length) {
+            if (solution.length === data.length) {
                 solutions.push(solution.join('-'))
                 // return false;
             }
             return true;
-           
+
         });
         return <div>
-            {solutions.map((solution, index)=><div>{index+1} - {solution}</div>)}
-            </div>
+            {solutions.map((solution, index) => <div>{index + 1} - {solution}</div>)}
+        </div>
     }
-   
+
     return (
-        <div>
-            { solution() }
+        <div className="mx-20">
+            <h1 className="text-center">Circular tour to visit all the petrol pumps</h1>
+            <div className="py-10">
+                <GraphComponent />
+            </div>
+            <div className="px-10 py-5">
+                <p>Please find the solution below,</p>
+                {solution()}
+            </div>
         </div>
     )
 }

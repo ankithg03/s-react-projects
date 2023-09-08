@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Link, Route } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import logo from '../icon/project_icon.png'
 import HomePage from "../Page/Index";
-import PetrolPumpPage from "../Page/PetrolPump/PetrolPumpComponent"
+import PetrolPumpPage from "../Page/PetrolPump"
 import SubString from "../Page/SubString";
 import "./routeStyle.css"
 
@@ -34,7 +34,7 @@ const RouteComponent = () => {
                 {/* -------------------------------------------------------------------------Header */}
 
                 <nav className="relative flex flex-wrap items-center justify-between px-0 mb-3 header-bg">
-                    <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+                    <div className="container mx-auto flex flex-wrap items-center justify-between">
 
                         <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
                         <Link className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" to="/">
