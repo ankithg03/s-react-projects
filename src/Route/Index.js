@@ -5,6 +5,7 @@ import logo from '../icon/project_icon.png'
 import HomePage from "../Page/Index";
 import PetrolPumpPage from "../Page/PetrolPump"
 import SubString from "../Page/SubString";
+import CollapsableComponent from "../Page/CollapsableComponent"
 import "./routeStyle.css"
 
 const RouteComponent = () => {
@@ -78,6 +79,7 @@ const RouteComponent = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/petrol-pump" element={<PetrolPumpPage />} />
                     <Route path="/sub-string" element={<SubString />} />
+                    <Route path="/movie-time" element={<CollapsableComponent />} />
                 </Routes>
             </div>
         </Router>

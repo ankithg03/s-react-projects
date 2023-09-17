@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Active {
+    display: block;
+}
+
+.inActive{
+    display: none;
+}
+
+.main-container{
+    display: grid;
+    justify-content: center;
+}
+
+.content-display{
+
+}
+
+.initial-display{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row-reverse; */
+}
