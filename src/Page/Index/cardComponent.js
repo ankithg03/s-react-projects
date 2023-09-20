@@ -5,7 +5,7 @@ const CardComponent = ({ name, desc, link, imageSrc, tech }) => {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <Link className="item" to={link}>
-        <img className="rounded-t-lg" src={imageSrc} alt="" />
+        <img className="rounded-t-lg project-img" src={imageSrc} alt="" />
       </Link>
       <div className="p-5">
         <Link className="item" to={link}>
