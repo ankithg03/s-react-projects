@@ -19,7 +19,7 @@ class CollapsableComponent extends Component {
 
     render() {
         return (
-            <div className="w-full max-w-lg p-4 m-10 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div className="w-full max-w-lg p-4 m:0 lg:m-10 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                 <div className="flex items-center justify-between mb-4">
                     <h2 className="text-xl font-bold leading-none text-gray-900 dark:text-white">{this.props.question}</h2>
                     <button className={!this.state.expand ? 'Active' : 'inActive'} onClick={this.handleClickPlus}>+</button>

@@ -1,12 +1,14 @@
 import  React, {useState} from "react"
 import { BrowserRouter as Router, Routes, Link, Route } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import "./routeStyle.css"
+
 import logo from '../icon/project_icon.png'
 import HomePage from "../Page/Index";
 import PetrolPumpPage from "../Page/PetrolPump"
 import SubString from "../Page/SubString";
 import CollapsableComponent from "../Page/CollapsableComponent"
-import "./routeStyle.css"
+import DarkModeComponent from "../Page/DarkModeComponent/index"
 
 const RouteComponent = () => {
     const [navVis, setNavVis] = useState()
@@ -34,7 +36,7 @@ const RouteComponent = () => {
 
                 {/* -------------------------------------------------------------------------Header */}
 
-                <nav className="relative flex flex-wrap items-center justify-between px-0 mb-3 header-bg">
+                <nav className="relative flex flex-wrap items-center justify-between px-0 header-bg">
                     <div className="container mx-auto flex flex-wrap items-center justify-between">
 
                         <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
@@ -80,6 +82,7 @@ const RouteComponent = () => {
                     <Route path="/petrol-pump" element={<PetrolPumpPage />} />
                     <Route path="/sub-string" element={<SubString />} />
                     <Route path="/movie-time" element={<CollapsableComponent />} />
+                    <Route path="/dark-mode" element={<DarkModeComponent />}/>
                 </Routes>
             </div>
         </Router>

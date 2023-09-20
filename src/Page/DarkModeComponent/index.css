@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --backgroundColor: #fff;
+    --textColor: #000;
+    --formBg : #FFFFFF;
+    --inputBg : #f2f2f2;
+    --btnBg :#F4E869;
+    --btnTxtColor : #FFFFFF;
+    --btnHoverBg : #0B2447;
+    --msgColor : #b3b3b3;
+    --msgAColor : #7892b6;;
+}
+.dark-mode {
+    --backgroundColor: #0B2447;
+    --btnBg : #0B2447;
+    --textColor: #fff;
+}
+
+.dark-mode-container{
+    background: var(--backgroundColor);
+    color: var(--textColor);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .sub-container-1 {
+    width: 100%;
+    height: 40vh;
+} */
+
+
+/* ------------------------------Login page CSS */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page-container {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.dark-mode-form {
+  position: relative;
+  z-index: 1;
+  background: var(--formBg);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.dark-mode-form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: var(--inputBg);
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.dark-mode-form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: var(--btnBg);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: var(--btnTxtColor);
+    font-size: 14px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+.dark-mode-form button:hover,.dark-mode-form button:active,.dark-mode-form button:focus {
+  background: var(--btnHoverBg);
+}
+.dark-mode-form .dark-mode-message {
+  margin: 15px 0 0;
+  color: var(--msgColor);
+  font-size: 12px;
+}
+.dark-mode-form .dark-mode-message a {
+    color: var(--msgAColor);
+    text-decoration: none;
+}
+.dark-mode-form .register-dark-mode-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  /* background: #76b852; */
+  /* background: rgb(141,194,111); */
+  /* background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%); */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+
+/* ---------------------------------------------------dark mode css */
+.dark-mode-slider {
+    background-color: #ffffff2b;
+    border-radius: 100px;
+    padding: 1px;
+    margin: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    align-items: center;
+    position: relative;
+    display: block;
+    width: 51px;
+    height: 29px;
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 5px inset, rgb(11 36 71) 0px 0px 0px 24px inset,
+          #0b2447 0px 0px 0px 0px inset, rgba(224, 224, 224, 0.45) 0px 1px 0px 0px;
+  }
+  
+  .dark-mode-slider::after {
+    content: "";
+    display: flex;
+    top: 2.3px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #e3e3e3;
+    border-radius: 200px;
+    position: absolute;
+    box-shadow: transparent 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+    transition: left 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s, background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    will-change: left, background-color;
+  }
+  
+  .dark-mode-switch input[type="checkbox"]:checked + .dark-mode-slider {
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 5px inset, #0b2447 0px 0px 0px 2px inset, #BDBDBD 0px 0px 0px 24px inset, rgba(224, 224, 224, 0.45) 0px 1px 0px 0px;
+  }
+  
+  .dark-mode-switch input[type="checkbox"]:checked + .dark-mode-slider::after {
+    left: 24px;
+  }
+  
+  .dark-mode-switch input[type="checkbox"] {
+    display: none;
+  }
+
+  .dark-mode-toggle-container{
+    margin-top: 2rem;
+  }
