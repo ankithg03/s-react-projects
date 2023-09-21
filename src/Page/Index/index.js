@@ -8,6 +8,7 @@ import CCImage from "../../images/collapsiblecomponent.svg"
 import darkMode from "../../images/darkmode.webp"
 import weather from "../../images/weather.jpg"
 import slider from "../../images/slider.avif"
+import register from "../../images/registerform.jpg"
 
 const IndexPage = () => {
     return (
@@ -69,6 +70,14 @@ const IndexPage = () => {
                     imageSrc={slider}
                 />
 
+                {/* ---------------------------------card -5 */}
+                <CardComponent
+                    name="registration form"
+                    desc="registration form"
+                    tech="HTML, CSS, JS, React"
+                    link="/register-component"
+                    imageSrc={register}
+                />
             </div>
         </div>
     )

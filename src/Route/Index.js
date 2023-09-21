@@ -11,6 +11,7 @@ import CollapsableComponent from "../Page/CollapsableComponent"
 import DarkModeComponent from "../Page/DarkModeComponent/index"
 import WeatherForecastingComponent from "../Page/WeatherForecastingComponent";
 import SliderComponent from "../Page/SliderComponent";
+import RegisterComponent from "../Page/RegisterComponent";
 
 const RouteComponent = () => {
     const [navVis, setNavVis] = useState()
@@ -87,6 +88,7 @@ const RouteComponent = () => {
                     <Route path="/dark-mode" element={<DarkModeComponent />}/>
                     <Route path="/weather-component" element={<WeatherForecastingComponent />} />
                     <Route path="/slider-component" element={<SliderComponent />} />
+                    <Route path="/register-component" element={<RegisterComponent />} />
                 </Routes>
             </div>
         </Router>
