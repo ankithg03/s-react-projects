@@ -144,7 +144,7 @@
   }
 
 /* ------------------------------------------------------buttonCSS */
-button {
+button.customBtn {
     padding: 1.3em 3em;
     font-size: 12px;
     text-transform: uppercase;
@@ -167,7 +167,7 @@ button {
     align-items: flex-end;
   }
 
-  button:hover {
+  button.customBtn:hover {
     background-color: dodgerblue;
     box-shadow: dodgerblue;
     color: #fff;
