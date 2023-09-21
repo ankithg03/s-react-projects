@@ -9,6 +9,7 @@ import PetrolPumpPage from "../Page/PetrolPump"
 import SubString from "../Page/SubString";
 import CollapsableComponent from "../Page/CollapsableComponent"
 import DarkModeComponent from "../Page/DarkModeComponent/index"
+import WeatherForecastingComponent from "../Page/WeatherForecastingComponent";
 
 const RouteComponent = () => {
     const [navVis, setNavVis] = useState()
@@ -83,6 +84,7 @@ const RouteComponent = () => {
                     <Route path="/sub-string" element={<SubString />} />
                     <Route path="/movie-time" element={<CollapsableComponent />} />
                     <Route path="/dark-mode" element={<DarkModeComponent />}/>
+                    <Route path="/weather-component" element={<WeatherForecastingComponent />} />
                 </Routes>
             </div>
         </Router>
