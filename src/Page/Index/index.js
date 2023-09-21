@@ -7,6 +7,7 @@ import subString from "../../images/SubString.png"
 import CCImage from "../../images/collapsiblecomponent.svg"
 import darkMode from "../../images/darkmode.webp"
 import weather from "../../images/weather.jpg"
+import slider from "../../images/slider.avif"
 
 const IndexPage = () => {
     return (
@@ -57,6 +58,15 @@ const IndexPage = () => {
                     tech="HTML, CSS, JS, React"
                     link="/weather-component"
                     imageSrc={weather}
+                />
+
+                {/* ---------------------------------card -5 */}
+                <CardComponent
+                    name="sliding window"
+                    desc="sliding component"
+                    tech="HTML, CSS, JS, React"
+                    link="/slider-component"
+                    imageSrc={slider}
                 />
 
             </div>

@@ -1,0 +1,17 @@
+.mycard{
+    min-width: calc(100vh - 3rem);
+    max-width: 300px;
+    height: calc(100vh - 4.8rem);
+    background-color: black;
+    margin: 10px;
+    color: white;
+}
+.image-container img{
+    width: 100%;
+    object-fit: cover;
+}
+.image-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
